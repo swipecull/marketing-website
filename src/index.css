@@ -1,0 +1,55 @@
+@import "tailwindcss";
+
+@theme {
+  /* SwipeCull color palette */
+  /* Backgrounds */
+  --color-sc-black: #0a0a0a;
+  --color-sc-charcoal: #1a1a1a;
+  --color-sc-dark: #2d2d2d;
+
+  --color-sc-white: #fafafa;
+  --color-sc-cream: #f5f3ff;
+  --color-sc-pearl: #e8e4f8;
+
+  /* Primary blue accent */
+  --color-sc-purple: #2563EB;
+  --color-sc-purple-light: #60A5FA;
+  --color-sc-purple-dark: #1E40AF;
+  --color-sc-purple-muted: #DBEAFE;
+
+  /* Gradients */
+  --color-gradient-start: #2563EB;
+  --color-gradient-mid: #3B82F6;
+  --color-gradient-end: #60A5FA;
+
+  --font-family-sans: 'Inter', system-ui, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  font-family: var(--font-family-sans);
+  background-color: var(--color-sc-white);
+  color: var(--color-sc-black);
+  margin: 0;
+}
+
+.gradient-text {
+  background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-mid), var(--color-gradient-end));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-bg {
+  background: linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-mid), var(--color-gradient-end));
+}
+
+.gradient-border {
+  position: relative;
+  background: linear-gradient(var(--color-sc-white), var(--color-sc-white)) padding-box,
+              linear-gradient(135deg, var(--color-gradient-start), var(--color-gradient-mid), var(--color-gradient-end)) border-box;
+  border: 2px solid transparent;
+}
