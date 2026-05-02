@@ -20,12 +20,6 @@ export default function Header() {
             >
               Features
             </Link>
-            <Link
-              to="/#pricing"
-              className="text-sc-dark hover:text-sc-purple transition-colors font-medium"
-            >
-              Pricing
-            </Link>
             <a
               href="https://apps.apple.com/app/swipecull"
               target="_blank"
