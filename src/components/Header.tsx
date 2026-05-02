@@ -14,12 +14,6 @@ export default function Header() {
             <span className="font-bold text-xl text-sc-black">SwipeCull</span>
           </Link>
           <nav className="flex items-center gap-6">
-            <Link
-              to="/#features"
-              className="text-sc-dark hover:text-sc-purple transition-colors font-medium"
-            >
-              Features
-            </Link>
             <a
               href="https://apps.apple.com/app/swipecull"
               target="_blank"
